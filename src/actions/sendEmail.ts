@@ -7,7 +7,16 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Configuration
 const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL;
+
+if (!RECIPIENT_EMAIL) {
+  throw new Error("Missing RECIPIENT_EMAIL in environment variables");
+}
+
 const FROM_EMAIL = process.env.FROM_EMAIL;
+
+if (!FROM_EMAIL) {
+  throw new Error("Missing FROM_EMAIL in environment variables");
+}
 
 // Email validation regex pattern
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -36,21 +45,21 @@ export const sendContactEmail = async (formData: FormData) => {
   }
 
   try {
-    const data = await resend.emails.send({
+    const { data, error }  = await resend.emails.send({
       from: FROM_EMAIL,
       to: RECIPIENT_EMAIL,
       replyTo: email,
       subject: `New Contact Request: ${topic || 'General Inquiry'}`,
       text: `
-Name: ${name}
-Company: ${company || 'N/A'}
-Email: ${email}
-Topic: ${topic || 'General'}
-Car Brand: ${carBrand || 'N/A'}
-Car Model: ${carModel || 'N/A'}
-
-Message:
-${message}
+        Name: ${name}
+        Company: ${company || 'N/A'}
+        Email: ${email}
+        Topic: ${topic || 'General'}
+        Car Brand: ${carBrand || 'N/A'}
+        Car Model: ${carModel || 'N/A'}
+            
+        Message:
+        ${message}
       `.trim(),
       html: `
         <h2>New Contact Request</h2>
