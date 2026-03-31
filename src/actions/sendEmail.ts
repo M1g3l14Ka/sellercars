@@ -6,8 +6,8 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Configuration
-const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL || 'info@millioncars.com';
-const FROM_EMAIL = process.env.FROM_EMAIL || 'Million Cars <onboarding@resend.dev>';
+const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL;
+const FROM_EMAIL = process.env.FROM_EMAIL;
 
 // Email validation regex pattern
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
