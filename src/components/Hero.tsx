@@ -11,7 +11,6 @@ export default function Hero() {
             transition={{duration:0.8, ease:"easeIn"}}
         >
             <div className="relative h-screen flex items-center justify-center overflow-hidden">
-              {/* Background gradient */}
               <div className="absolute inset-0 bg-linear-to-br from-orange-900/20 via-black to-red-900/20" />
 
               <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
@@ -43,11 +42,10 @@ export default function Hero() {
               {/* Scroll indicator */}
               <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
                 <svg className="w-6 h-6 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
                 </svg>
               </div>
             </div>
         </motion.div>
     )
 }
-
