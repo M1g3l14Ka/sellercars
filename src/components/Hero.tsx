@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
 
@@ -9,6 +10,7 @@ export default function Hero() {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{duration:0.8, ease:"easeIn"}}
+            id="contacts"
         >
             <div className="relative h-screen flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-linear-to-br from-orange-900/20 via-black to-red-900/20" />
@@ -23,19 +25,35 @@ export default function Hero() {
                 <p className="text-xl md:text-2xl text-zinc-400 mb-10 max-w-3xl mx-auto">
                   Discover the best deals on quality used cars. Direct from ENCAR - Korea&apos;s largest automotive marketplace.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="#inventory"
-                    className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all hover:scale-105"
-                  >
-                    Browse Inventory
-                  </a>
-                  <a 
-                    href="#contact"
-                    className="border border-zinc-700 hover:border-zinc-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all hover:scale-105"
-                  >
-                    Contact Us
-                  </a>
+                <div className="flex flex-col items-center sm:flex-row gap-4 justify-center">
+                    <div className="transition-all hover:scale-105">
+                        <a 
+                          href="#inventory"
+                          className="bg-linear-30 from-orange-600 to-red-500 text-white px-8 py-4 rounded-full font-bold text-xl"
+                        >
+                          Browse Inventory
+                        </a>
+                    </div>
+                    <Link href={"/contacts"}>
+                        <div className="bg-linear-30 from-orange-600 to-red-500 flex items-center justify-center gap-3 text-white px-8 py-4 rounded-full font-bold text-xl transition-all hover:scale-105">
+                            <svg
+                              className="w-6 h-6 "
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                              />
+                            </svg>
+                            <span>
+                                Contact Us
+                            </span>
+                        </div>
+                    </Link>
                 </div>
               </div>
 
