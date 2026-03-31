@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "제네시스 G80   3.3 GDI AWD 프리미엄 럭셔리",
+    "year": 2018,
+    "mileage": 26896,
+    "price": 13990000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture04/pic4174/41741249_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260327154955",
+    "detailUrl": "https://fem.encar.com/cars/detail/41741249"
+  },
+  {
+    "id": 2,
+    "name": "기아 EV6   롱레인지 GT Line",
+    "year": 2018,
+    "mileage": 29051,
+    "price": 25990000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture08/pic4168/41680832_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260317175159",
+    "detailUrl": "https://fem.encar.com/cars/detail/41680832"
+  },
+  {
+    "id": 3,
+    "name": "현대 더 뉴 그랜드 스타렉스   밴 5인승 스마트",
+    "year": 2021,
+    "mileage": 25148,
+    "price": 9500000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture01/pic4151/41517291_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260219154103",
+    "detailUrl": "https://fem.encar.com/cars/detail/41530271"
+  },
+  {
+    "id": 4,
+    "name": "현대 더 뉴 그랜저 IG   2.5 익스클루시브",
+    "year": 2020,
+    "mileage": 61437,
+    "price": 15700000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture04/pic4164/41646512_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260313110956",
+    "detailUrl": "https://fem.encar.com/cars/detail/41657795"
+  },
+  {
+    "id": 5,
+    "name": "BMW X4 (G02)   xDrive20i xLine",
+    "year": 2019,
+    "mileage": 28805,
+    "price": 65500000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture05/pic4135/41356555_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260116134653",
+    "detailUrl": "https://fem.encar.com/cars/detail/41359232"
+  },
+  {
+    "id": 6,
+    "name": "BMW X4 (G02)   xDrive20i xLine",
+    "year": 2019,
+    "mileage": 63891,
+    "price": 65500000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture05/pic4135/41356555_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260116134653",
+    "detailUrl": "https://fem.encar.com/cars/detail/41356555"
+  },
+  {
+    "id": 7,
+    "name": "KG모빌리티(쌍용) 무쏘 스포츠 (Q250)   디젤 2.2 4WD 와일드",
+    "year": 2022,
+    "mileage": 50956,
+    "price": 32500000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture01/pic4161/41610587_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260309160655",
+    "detailUrl": "https://fem.encar.com/cars/detail/41626401"
+  },
+  {
+    "id": 8,
+    "name": "KG모빌리티(쌍용) 더 뉴 티볼리   1.6 2WD V3",
+    "year": 2022,
+    "mileage": 59425,
+    "price": 20800000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture08/pic4168/41686899_027.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260318172507",
+    "detailUrl": "https://fem.encar.com/cars/detail/41686900"
+  },
+  {
+    "id": 9,
+    "name": "KG모빌리티(쌍용) 더 뉴 티볼리   1.6 2WD V3",
+    "year": 2018,
+    "mileage": 73988,
+    "price": 20800000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture08/pic4168/41686899_027.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260318172507",
+    "detailUrl": "https://fem.encar.com/cars/detail/41686899"
+  },
+  {
+    "id": 10,
+    "name": "현대 스타리아   HEV 1.6 캠핑카 특장업체",
+    "year": 2022,
+    "mileage": 80400,
+    "price": 45500000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture07/pic4157/41572508_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260226185436",
+    "detailUrl": "https://fem.encar.com/cars/detail/41572535"
+  },
+  {
+    "id": 11,
+    "name": "기아 더 뉴 K8 하이브리드   시그니처",
+    "year": 2021,
+    "mileage": 25629,
+    "price": 49500000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture03/pic4163/41632370_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260311154055",
+    "detailUrl": "https://fem.encar.com/cars/detail/41644133"
+  },
+  {
+    "id": 12,
+    "name": "기아 더 뉴 K8 하이브리드   시그니처",
+    "year": 2023,
+    "mileage": 36290,
+    "price": 49500000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture03/pic4163/41632370_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260311154055",
+    "detailUrl": "https://fem.encar.com/cars/detail/41632370"
+  },
+  {
+    "id": 13,
+    "name": "KG모빌리티(쌍용) 무쏘 스포츠 (Q250)   디젤 2.2 4WD 와일드",
+    "year": 2022,
+    "mileage": 42762,
+    "price": 32500000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture01/pic4161/41610587_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260309160655",
+    "detailUrl": "https://fem.encar.com/cars/detail/41610587"
+  },
+  {
+    "id": 14,
+    "name": "기아 더 뉴 스포티지 5세대   가솔린 1.6 터보 2WD 시그니처 X Line",
+    "year": 2019,
+    "mileage": 32970,
+    "price": 36000000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture07/pic4157/41571214_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260227135425",
+    "detailUrl": "https://fem.encar.com/cars/detail/41576608"
+  },
+  {
+    "id": 15,
+    "name": "기아 더 뉴 스포티지 5세대   가솔린 1.6 터보 2WD 시그니처 X Line",
+    "year": 2019,
+    "mileage": 66760,
+    "price": 36000000,
+    "currency": "KRW",
+    "imageUrl": "https://ci.encar.com/carpicture/carpicture07/pic4157/41571214_001.jpg?impolicy=heightRate&rh=384&cw=640&ch=384&cg=Center&wtmk=https://ci.encar.com/wt_mark/w_mark_04.png&t=20260227135425",
+    "detailUrl": "https://fem.encar.com/cars/detail/41571214"
+  }
+]
