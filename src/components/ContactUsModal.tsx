@@ -50,7 +50,7 @@ export default function ContactUsModal() {
       className="min-h-screen w-full flex flex-col justify-center items-center p-4 gap-4"
     >
       {/* Header Section */}
-      <div className="w-full">
+      <div className="w-full mt-16">
         <div className="pl-24">
           <div className="border-orange-600 border-l-2 h-36 flex w-full p-6 items-center justify-start">
             <h1 className="text-transparent bg-linear-to-r bg-clip-text from-orange-600 to-red-500 font-bold text-2xl">
