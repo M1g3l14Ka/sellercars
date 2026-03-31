@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const CONFIG = {
-  // Мобильная версия ENCAR - менее защищена
+  // Mobile version of ENCAR - less protected
   url: 'https://m.encar.com',
   maxCars: 15,
   outputPath: path.join(__dirname, '../public/data/cars.json'),
@@ -35,11 +35,11 @@ async function scrapeEncar() {
   
   try {
     browser = await chromium.launch({
-      headless: true,  // Скрываем браузер для стабильности
-      slowMo: 50,      // Меньше замедление
+      headless: true,  // Hide browser for stability
+      slowMo: 50,      // Less slowdown
     });
     
-    // Мобильный контекст
+    // Mobile context
     const context = await browser.newContext({
       viewport: { width: 390, height: 844 }, // iPhone size
       userAgent: USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)],
@@ -73,17 +73,17 @@ async function scrapeEncar() {
     } catch (e) {
       console.log('ℹNo cookie popup');
     }
-    
+
 
     console.log('Searching for car listings...');
-    
-    // Скролл
+
+    // Scroll
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await sleep(3000);
     await page.evaluate(() => window.scrollTo(0, 0));
     await sleep(2000);
-    
-    // Селекторы для мобильной версии
+
+    // Selectors for mobile version
     const carSelectors = [
       'div[class*="card"]',
       'div[class*="item"]',
@@ -117,23 +117,23 @@ async function scrapeEncar() {
     
     if (carElements.length === 0) {
       console.log('No cars found. Trying to navigate...\n');
-      
-      // Поиск навигации
-      const navLinks = await page.$$eval('a', links => 
+
+      // Search for navigation
+      const navLinks = await page.$$eval('a', links =>
         links.map(a => ({ href: a.href, text: a.textContent.trim() })).filter(l => 
           l.text?.includes('중고') || l.text?.includes('차량') || l.href?.includes('/car') || l.href?.includes('/buy')
         ).slice(0, 10)
       );
       
       console.log('Found navigation links:', navLinks);
-      
+
       if (navLinks.length > 0) {
         console.log('Clicking first link...\n');
         await page.click(`a[href="${navLinks[0].href}"]`);
         await page.waitForLoadState('networkidle');
         await sleep(random(4000, 6000));
-        
-        // Повторный поиск
+
+        // Search again
         for (const selector of carSelectors) {
           try {
             carElements = await page.$$(selector);
@@ -148,7 +148,7 @@ async function scrapeEncar() {
       }
     }
     
-    // Парсинг
+    // Parsing
     console.log(`Starting to parse ${Math.min(carElements.length, CONFIG.maxCars)} cars...\n`);
     
     for (let i = 0; i < Math.min(carElements.length, CONFIG.maxCars); i++) {
@@ -177,8 +177,8 @@ async function scrapeEncar() {
             }
             return '';
           };
-          
-          // Пробуем разные варианты
+
+          // Try different variants
           const nameParts = [
             getText('[class*="name"]'),
             getText('[class*="title"]'),
@@ -203,21 +203,21 @@ async function scrapeEncar() {
             url: getAttr('a', 'href'),
           };
         });
-        
-        // Обработка
+
+        // Processing
         const processedCar = {
           id: cars.length + 1,
           name: carData.name || `Car #${i + 1}`,
           year: parseInt(carData.year?.match(/\d{4}/)?.[0]) || random(2018, 2023),
           mileage: parseInt(carData.mileage?.replace(/[^0-9]/g, '')) || random(10000, 100000),
-          // ENCAR показывает цены в 만 won (10,000), умножаем на 10000
+          // ENCAR shows prices in 만 won (10,000), multiply by 10000
           price: (parseInt(carData.price?.replace(/[^0-9]/g, '')) || random(1500, 7000)) * 10000,
           currency: 'KRW',
           imageUrl: carData.image?.startsWith('http') ? carData.image : `https:${carData.image}`,
           detailUrl: carData.url?.startsWith('http') ? carData.url : CONFIG.url,
         };
-        
-        // Пропускаем если нет нормального названия
+
+        // Skip if no valid name
         if (!carData.name || carData.name.length < 3 || carData.name.includes('내차')) {
           console.log(`Skipping #${i + 1} - invalid name: "${carData.name}"`);
           continue;
@@ -227,8 +227,8 @@ async function scrapeEncar() {
         console.log(`[${cars.length}/${CONFIG.maxCars}] ${processedCar.name} (${processedCar.year}) - ${processedCar.price.toLocaleString()} ₩`);
         
         if (cars.length >= CONFIG.maxCars) break;
-        
-        // Задержка
+
+        // Delay
         if (i < carElements.length - 1) {
           const delay = random(2000, 4000);
           await sleep(delay);
@@ -239,7 +239,7 @@ async function scrapeEncar() {
       }
     }
     
-    // Сохранение
+    // Saving
     console.log('\nSaving...');
     const outputDir = path.dirname(CONFIG.outputPath);
     
