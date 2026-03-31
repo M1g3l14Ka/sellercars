@@ -108,14 +108,6 @@ million-cars/
 | Email | Resend |
 | Hosting | Vercel |
 
-## 🔐 Environment Variables
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `RESEND_API_KEY` | Resend.com API key | Yes (for contact form) |
-| `RECIPIENT_EMAIL` | Your email to receive messages | Yes |
-| `FROM_EMAIL` | Sender email (use Resend domain) | No |
-
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
