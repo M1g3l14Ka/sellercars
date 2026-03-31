@@ -1,10 +1,14 @@
-import ContactUsModal from "@/components/ContactUsModal";
+import ContactUsModal from '@/components/ContactUsModal';
 
-export default function Home() {
+export const metadata = {
+  title: 'Contact Us - Million Cars',
+  description: 'Get in touch with our team of car experts',
+};
 
+export default function ContactsPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <ContactUsModal/>
+    <div>
+        <ContactUsModal />
     </div>
   );
 }
