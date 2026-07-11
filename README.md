@@ -71,12 +71,12 @@ million-cars/
 
 ### Web Scraping
 - Playwright + Chromium
-- Mobile version of ENCAR (less protected)
+- Built a Playwright-based data extraction pipeline using the mobile document structure, with normalized output and resilient error handling.
 - Real-time data with images
 - Automatic price conversion (×10,000 for 만 won)
 
 ### Email Contact Form
-- Resend API for email delivery
+-Nodemailer for email delivery
 - Server-side validation
 - Success/error feedback
 - Reply-to support
