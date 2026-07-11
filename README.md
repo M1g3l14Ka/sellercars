@@ -1,8 +1,8 @@
-# Million Cars 🚗
+# Million Cars 
 
 Premium used cars from South Korea - scraped from ENCAR.com
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 ```bash
@@ -40,7 +40,7 @@ npm run dev
 
 Open http://localhost:3000
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 million-cars/
@@ -67,7 +67,7 @@ million-cars/
 └── package.json
 ```
 
-## 🔧 Features
+## Features
 
 ### Web Scraping
 - Playwright + Chromium
@@ -88,7 +88,7 @@ million-cars/
 - Equal-height car cards
 - Loading states
 
-## 🛡️ Security
+## Security
 
 - Server-side form validation
 - Email format validation
@@ -96,7 +96,7 @@ million-cars/
 - Environment variables for secrets
 - No API keys in client code
 
-## 📊 Tech Stack
+## Tech Stack
 
 | Category | Technology |
 |----------|-----------|
@@ -108,7 +108,7 @@ million-cars/
 | Email | Resend |
 | Hosting | Vercel |
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 1. Push to GitHub
@@ -120,7 +120,7 @@ million-cars/
 - Go to Project Settings → Environment Variables
 - Add `RESEND_API_KEY`, `RECIPIENT_EMAIL`, `FROM_EMAIL`
 
-## 📝 Scripts
+## Scripts
 
 ```bash
 npm run dev      # Start development server
@@ -130,12 +130,12 @@ npm run scrape   # Scrape cars from ENCAR
 npm run lint     # Run ESLint
 ```
 
-## 🌐 Pages
+## Pages
 
 - **/** - Main landing page with car inventory
 - **/contacts** - Contact form page
 
-## 🎨 Customization
+## Customization
 
 ### Change Colors
 Edit `tailwind.config.ts` or use inline classes:
@@ -151,18 +151,18 @@ npm run scrape  # Get fresh data from ENCAR
 ### Modify Email Template
 Edit `src/actions/sendEmail.ts`
 
-## 📄 License
+## License
 
 MIT License - feel free to use for learning or commercial projects.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch
 3. Make changes
 4. Submit pull request
 
-## 📞 Support
+## Support
 
 For issues or questions, create an issue on GitHub or contact the developer.
 
